@@ -1,0 +1,74 @@
+/* General styling for the layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Container for the main layout */
+#container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar styling */
+#sidebar {
+    width: 25%;
+    max-width: 400px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+#sidebar h2 {
+    font-size: 2em;
+    color: #2c3e50; /* Darker color for headings */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Headings styling */
+#categories > li {
+    font-size: 1.5em;
+    color: #0073e6; /* Blue color for headings */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Blog titles styling */
+#categories > li + ul {
+    margin-left: 15px; /* Indentation for blog titles */
+    list-style: none; /* Remove bullets */
+    padding-left: 10px; /* Add padding for alignment */
+}
+
+#categories > li + ul > li {
+    font-size: 1em;
+    color: #555; /* Grey color for blog titles */
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+#categories > li + ul > li:hover {
+    color: #0073e6; /* Hover effect */
+    text-decoration: underline;
+}
+
+/* Content area styling */
+#content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#blog-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
